@@ -1,0 +1,255 @@
+/* Global styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+/* Background image with dark overlay */
+body {
+  margin: 0;
+  padding: 0;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('back.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+ 
+}
+
+
+
+
+/* Main wrapper to stack above overlay */
+.page-wrapper {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* Header box */
+.intro-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 35vh;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+/* Info box */
+.info-box {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 15px 25px;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  max-width: 100%;
+}
+
+.info-box h1, .info-box h2 {
+  margin: 0;
+  text-wrap: balance;
+}
+
+.info-box h1 {
+  font-size: 1.8rem;
+}
+
+.info-box h2 {
+  margin-top: 8px;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+
+
+/* About section */
+.about-box {
+  background-color: rgb(7, 0, 0);
+  padding: 25px 35px;
+  border-radius: 20px;
+  color: #ffffff;
+  max-width: 850px;
+  font-size: 1rem;
+  line-height: 1.6;
+  box-shadow: 0 8px 20px rgb(0, 0, 0);
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+.about-box a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.r a.resume-link {
+  color: white;
+  text-decoration: none;
+}
+
+.r a.resume-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Resume button */
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #008000;
+  color: rgb(255, 254, 254);
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+ 
+  margin-top: 15px;
+}
+
+.download-btn:hover {
+ 
+  transform: scale(1.05);
+ 
+}
+
+/* Footer */
+.foot {
+  width: 100%;
+  background-color: rgb(9, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.footer-left p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-left a {
+  color: #aaddff;
+  text-decoration: none;
+}
+
+.footer-left a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  display: flex;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.social-links li a {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.social-links li a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-links li a:hover img {
+  transform: scale(1.25); /* Expand on hover */
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .info-box h1 {
+    font-size: 1.4rem;
+  }
+
+  .info-box h2 {
+    font-size: 1rem;
+  }
+
+  .about-box {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .download-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .foot {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .footer-right {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .social-links {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-box h1 {
+    font-size: 1.2rem;
+  }
+
+  .info-box h2 {
+    font-size: 0.9rem;
+  }
+
+  .about-box {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .download-btn {
+    font-size: 0.9rem;
+  }
+
+  .social-links li a {
+    font-size: 1rem;
+  }
+}
+
