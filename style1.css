@@ -140,9 +140,10 @@ body {
 /* 📱 Responsive styling for small screens */
 @media (max-width: 600px) {
   .download-btn {
-    padding: 8px 16px;
-    font-size: 0.9rem;
+    padding: 8px 14px;
+    font-size: 0.85rem;
     border-radius: 8px;
+    margin-left: 10px;  /* move slightly to the left */
   }
 }
 
