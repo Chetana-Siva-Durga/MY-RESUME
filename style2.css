@@ -4,7 +4,7 @@ body {
   padding: 0;
   background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('back.jpg') no-repeat center center fixed;
+    url('https://raw.githubusercontent.com/Chetana-Siva-Durga/MY-RESUME/main/back.jpg') no-repeat center center fixed;
   background-size: cover;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #fff;
